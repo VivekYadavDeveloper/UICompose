@@ -56,7 +56,7 @@ import com.phoenixoid.loginscreenjetpackcompose.ui.theme.Purple40
 import com.phoenixoid.loginscreenjetpackcompose.ui.theme.Purple80
 import com.phoenixoid.loginscreenjetpackcompose.ui.theme.selectedPink
 
-
+/*Main Home Screen Composable*/
 @Composable
 fun HomeScreen() {
 
@@ -238,8 +238,6 @@ fun CustomChips(title: String, selected: Boolean, onValueChange: (String) -> Uni
 
 
 /*Extended Floating Action Button*/
-
-
 @Composable
 fun ExtendedFloatingActionButton(
 

@@ -34,6 +34,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.Alignment.Companion.BottomEnd
 import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -135,7 +136,7 @@ fun ShowPizza(
             ) {
                 Image(
 
-                    painter = painterResource(id = R.drawable.one),
+                    painter = painterResource(id = R.drawable.four),
                     alignment = Alignment.Center,
                     contentDescription = "",
 
@@ -201,7 +202,7 @@ fun PizzaHeader() {
                 AppIconButton(icon = com.phoenixoid.loginscreenjetpackcompose.R.drawable.menu_24)
                 SpacerWidth(10.dp)
                 Text(
-                    text = "Longlatta", style = TextStyle(fontSize = 25.sp)
+                    text = "Food Maker", style = TextStyle(fontSize = 25.sp)
                 )
             }
 
@@ -240,23 +241,25 @@ fun CustomChips(title: String, selected: Boolean, onValueChange: (String) -> Uni
 /*Extended Floating Action Button*/
 @Composable
 fun ExtendedFloatingActionButton(
-
     modifier: Modifier
 ) {
     Box(
         modifier = modifier
+
             .height(48.dp)
+            .width(145.dp)
             .clip(RoundedCornerShape(27.dp))
             .background(Purple40)
     ) {
         SpacerWidth()
 
-        Row(modifier = Modifier.align(alignment = Alignment.Center)) {
+        Row(modifier = Modifier.align(alignment = BottomEnd)) {
             Text(
                 text = "$60.50",
                 style = TextStyle(fontSize = 18.sp, color = Color.White),
                 modifier = Modifier.align(CenterVertically)
             )
+            SpacerWidth()
             Icon(
                 painter = painterResource(id = R.drawable.four),
                 contentDescription = "",

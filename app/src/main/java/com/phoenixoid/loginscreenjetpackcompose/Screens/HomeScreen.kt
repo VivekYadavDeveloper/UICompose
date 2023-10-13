@@ -65,9 +65,9 @@ fun HomeScreen() {
         "Stater",
         "South Indian",
         "Longlatta",
-        "RajBogh",
+        "Rajbogh",
         "Imirti",
-        "Longlatta Khoya",
+        "Khoya Longlatta",
     )
     var currentMenuState by remember { mutableStateOf("Stater") }
 
